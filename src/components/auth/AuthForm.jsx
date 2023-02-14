@@ -86,7 +86,7 @@ const AuthForm = ({ isLogin }) => {
           if (error.message.includes("401")) {
             alert(`이메일을 다시 제대로 입력해 주세요`);
           } else if (error.message.includes("404")) {
-            alert(`존재하지 않는 이메일입니다.`);
+            alert(`정확한 정보를 입력해주세요`);
           }
         });
     } else {
