@@ -84,9 +84,9 @@ const AuthForm = ({ isLogin }) => {
         })
         .catch((error) => {
           if (error.message.includes("401")) {
-            alert(`이메일을 다시 제대로 입력해 주세요`);
-          } else if (error.message.includes("404")) {
             alert(`정확한 정보를 입력해주세요`);
+          } else if (error.message.includes("404")) {
+            alert(`존재하지 않는 이메일입니다. 다시 입력해주세요`);
           }
         });
     } else {
@@ -97,7 +97,7 @@ const AuthForm = ({ isLogin }) => {
             navigate("/signin");
           }
         })
-        .catch((error) => alert(`이미 존재하는 이메일 입니다.`));
+        .catch((error) => alert(`이미 존재하는 이메일 입니다`));
     }
   };
 
