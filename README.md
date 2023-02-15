@@ -83,4 +83,4 @@ src
 
 ---
 
-[배포된 사이트](wanted-preonboarding-frontend.netlify.app)
+[배포된 사이트](https://wanted-preonboarding-frontend.netlify.app)
